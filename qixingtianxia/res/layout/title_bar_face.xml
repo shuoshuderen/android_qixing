@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA">
+<!--      <ImageView
+            android:id="@+id/tv_face_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           android:src="@drawable/ic_back_left"
+             />
+        <Button
+            android:id="@+id/btn_face_ok"
+            style="@style/topbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+            android:layout_marginRight="16dp"
+            android:text="使用">
+            />
+ -->
+
+    <Button
+        android:id="@+id/btn_face_ok"
+        android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+        android:text="使用" />
+
+    <ImageView
+        android:id="@+id/tv_face_cancel"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_back_left" />
+
+</RelativeLayout>

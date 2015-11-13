@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LuXianActivity" >
+
+    <include layout="@layout/topbar" />
+
+    <com.qixing.my.views.ReboundScrollView
+        android:id="@+id/way_scrollview"
+        style="@style/mm"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/mm"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_way_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【骑行指数】："
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="风景"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/Start1_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="难度"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/Start2_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="流行"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/Start3_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+
+            <com.qixing.gc.view.PostGridview
+                android:id="@+id/way_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" >
+            </com.qixing.gc.view.PostGridview>
+
+            <TextView
+                  android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【 最佳路线】："
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_way_neirong"
+                android:layout_width="wrap_content"
+                  android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_way_time"
+                  android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/zan_way"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/good_before" />
+
+                <TextView
+                android:id="@+id/text_way_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.qixing.my.views.ReboundScrollView>
+
+</LinearLayout>

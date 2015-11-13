@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm_b"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/topbar" >
+
+        <TextView
+            style="@style/topbartext"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my" />
+    </RelativeLayout>
+
+    <com.qixing.my.views.ReboundScrollView
+        style="@style/mm"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/mw"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/unlogin"
+                style="@style/ll1"
+                android:orientation="horizontal" >
+
+                <!-- 圆形头像 -->
+
+                <com.qixing.my.views.CircleImageView
+                    android:id="@+id/user_default_image"
+                    style="@style/userimage"
+                    android:src="@drawable/weidenglu" />
+
+                <TextView
+                    android:id="@+id/my_login_please_text"
+                    style="@style/usertext"
+                    android:text="@string/login_please" />
+            </LinearLayout>
+            <!-- android:visibility="gone" -->
+
+            <LinearLayout
+                android:id="@+id/logined"
+                style="@style/ll1" >
+
+                <com.qixing.my.views.CircleImageView
+                    android:id="@+id/my_userimage"
+                    style="@style/userimage"
+                    android:src="@drawable/weidenglu" />
+
+                <TextView
+                    android:id="@+id/my_userText"
+                    style="@style/usertext"
+                    android:hint="@string/username" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/my_ll_care"
+                style="@style/ll1" >
+
+                <ImageView
+                    android:id="@+id/my_care_Image"
+                    style="@style/qitaimage"
+                    android:src="@drawable/care_after" />
+
+                <TextView
+                    android:id="@+id/my_care_Text"
+                    style="@style/qitatext"
+                    android:text="@string/care" />
+            </LinearLayout>
+            <!-- 分割线 -->
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/my_ll_collect"
+                style="@style/ll2" >
+
+                <ImageView
+                    android:id="@+id/my_collectImage"
+                    style="@style/qitaimage"
+                    android:src="@drawable/collection_after" />
+
+                <TextView
+                    android:id="@+id/my_collectText"
+                    style="@style/qitatext"
+                    android:text="@string/collecttext" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/my_ll_record"
+                style="@style/ll1" >
+
+                <ImageView
+                    android:id="@+id/my_record_Image"
+                    style="@style/qitaimage"
+                    android:src="@drawable/jilu" />
+
+                <TextView
+                    android:id="@+id/my_record_Text"
+                    style="@style/qitatext"
+                    android:text="@string/jilu" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/my_ll_create"
+                style="@style/ll2" >
+
+                <ImageView
+                    android:id="@+id/my_create_Image"
+                    style="@style/qitaimage"
+                    android:src="@drawable/chedui" />
+
+                <TextView
+                    android:id="@+id/my_create_Text"
+                    style="@style/qitatext"
+                    android:text="我的车队" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_ll_more"
+                style="@style/ll1" >
+
+                <ImageView
+                    android:id="@+id/my_more_Image"
+                    style="@style/qitaimage"
+                    android:src="@drawable/more" />
+
+                <TextView
+                    android:id="@+id/my_more_Text"
+                    style="@style/qitatext"
+                    android:text="@string/more" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/my_ll_out"
+                style="@style/ll2"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/my_out_Text"
+                    style="@style/usertext"
+                    android:gravity="center"
+                    android:text="@string/out" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.qixing.my.views.ReboundScrollView>
+
+</LinearLayout>

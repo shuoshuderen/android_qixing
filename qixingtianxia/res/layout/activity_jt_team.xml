@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JtTeamActivity" >
+
+    <include layout="@layout/topbar" />
+
+    <com.qixing.my.views.ReboundScrollView
+        android:id="@+id/team_scrollview"
+        style="@style/mm"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/mm"
+            android:orientation="vertical" >
+
+            <!-- 头像，名字 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/cd_touxiang_jt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp" />
+                <!-- 姓名,车队ID -->
+
+                <LinearLayout
+                    style="@style/ww"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cd_name"
+                        style="@style/ww"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cd_ID"
+                        style="@style/ww"
+                        android:textColor="#696969" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 点击添加口号 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:text="@string/kouhao"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_kouhao"
+                    style="@style/mm"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- 点击增加介绍 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:text="@string/jieshao"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_jieshao"
+                    android:gravity="center_vertical"
+                    style="@style/mm" />
+            </LinearLayout>
+            <!-- 队长信息 :队长姓名写死了 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:id="@+id/cd_duizhang_lin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="队长"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_duizhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/you" />
+                
+            </LinearLayout>
+
+            <!-- 队员头像，添加 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:id="@+id/cd_duiyuan_lin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="队员"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_duiyuan"
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp" />
+
+                 <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/you" />
+            </LinearLayout>
+
+            <!-- 骑行里程 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="里程"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_licheng"
+                    style="@style/ww"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <!-- 车队公告 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="车队公告"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_gonggao"
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="车队公告"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- 车队群聊 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:id="@+id/cd_qunliao_lin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="车队群聊"
+                    android:textSize="15sp" />
+
+                 <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/you" />
+            </LinearLayout>
+            <!-- 时间 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="创建时间"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/CD_time"
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:text="0"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- 地点 -->
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:layout_weight="3"
+                    android:text="创建地点"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cd_address"
+                    style="@style/ww"
+                    android:layout_margin="15dp"
+                    android:text="323"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.qixing.my.views.ReboundScrollView>
+
+</LinearLayout>

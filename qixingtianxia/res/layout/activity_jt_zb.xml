@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JtZbActivity" >
+ <include layout="@layout/topbar" />
+    
+   <com.qixing.my.views.ReboundScrollView 
+        android:id="@+id/zhuangbei_scrollview"
+        style="@style/mm"
+        android:layout_marginTop="50dp"
+        android:scrollbars="none" >
+       
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        <TextView
+            android:id="@+id/jt_zb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jt_zb_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/jt_zb_neirong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+        
+        <com.qixing.gc.view.PostGridview
+                android:id="@+id/jt_zb_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" >
+            </com.qixing.gc.view.PostGridview>
+       </LinearLayout>
+       
+   </com.qixing.my.views.ReboundScrollView>
+
+</RelativeLayout>

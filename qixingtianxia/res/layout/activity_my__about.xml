@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qixing.wode.My_AboutActivity" >
+
+    <include
+        android:id="@+id/top1"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top1"
+        android:background="#87CEFA"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- 圆形头像 -->
+
+        <com.qixing.my.views.CircleImageView
+            android:id="@+id/user_default_image"
+            style="@style/userimage"
+            android:src="@drawable/apptubiao" />
+
+        <TextView
+            android:id="@+id/my_login_please_text"
+            style="@style/usertext1"
+            android:gravity="center"
+            android:text="骑行天下" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="版本:1.0"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/unlogin" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textSize="18sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/about_center_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/about_text" />
+    </LinearLayout>
+
+</RelativeLayout>

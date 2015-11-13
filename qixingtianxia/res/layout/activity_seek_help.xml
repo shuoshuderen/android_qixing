@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekHelpActivity" >
+
+    <include layout="@layout/topbar" />
+
+    <EditText
+        android:id="@+id/seek_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入名字" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/seek_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/seek_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="请输入求助内容" />
+
+    <EditText
+        android:id="@+id/seek_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seek_content"
+        android:layout_below="@+id/seek_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="请输入求助地点" />
+
+</RelativeLayout>

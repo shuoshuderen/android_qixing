@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/group_gc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#87CEFA"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/gc_tongcheng"
+            style="@style/dingbuTextStyle"
+            android:checked="true"
+            android:text="同城" />
+
+        <RadioButton
+            android:id="@+id/gc_haoyou"
+            style="@style/dingbuTextStyle"
+            android:text="我的" />
+        
+         <RadioButton
+            android:id="@+id/radiobutton_gc_bianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:drawableTop="@drawable/bianji"
+            android:onClick="bianji"
+            android:textSize="0dp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guangchangviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

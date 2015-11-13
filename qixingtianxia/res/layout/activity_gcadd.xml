@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/topbar" >
+
+        <TextView
+            android:id="@+id/tv_publish_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="取消"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="发帖"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="发送"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout style="@style/mw" >
+
+        <EditText
+            android:id="@+id/edtext_name_addtz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="标题(必填)" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout style="@style/mw" >
+
+        <EditText
+            android:id="@+id/edtext_neirong_addtz"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:hint="正文"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text_addtz_number"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/mw"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridView_addtz"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="#EFDFDF"
+            android:columnWidth="70dp"
+            android:gravity="center"
+            android:numColumns="5"
+            android:stretchMode="columnWidth" >
+        </GridView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(友情提示:只能添加3张图片,点击图片可以删除已添加图片)" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <RelativeLayout style="@style/mw" >
+
+        <ImageView
+            android:id="@+id/imagedingwei"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dingwei" />
+
+        <TextView
+            android:id="@+id/text_dizhi_addtz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imagedingwei"
+            android:text="苏州" />
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imagedingwei"
+        android:text="选择分类"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_tzclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#F5F5F5" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="攻略" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="灌水" />
+    </RadioGroup>
+
+</LinearLayout>

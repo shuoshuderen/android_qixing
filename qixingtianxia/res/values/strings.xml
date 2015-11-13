@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about_text">骑行天下&#160;版权所有\n
+        Copyright&#160;2015&#160;QiXing.\n
+        All&#160;Rights&#160;Reserved.</string>
+    <string name="about_center_text">&#160;&#160;骑行天下倡导并推行"爱生活,爱运动"的品牌理念,
+        致力于帮助都市人群发现最真实的自己,发现运动中的乐趣,鼓励大家出去走走,动起来!为你提供丰富的咨询和健康的社交氛围</string>
+    <string name="kongren">您搜索的用户不存在，请更换关键字后重新搜索 </string>
+    <string name="kongzhi">很抱歉，未搜索到你输入的内容，请更换关键字后重新搜索 </string>
+    <string name="kouhao">口号 </string>
+    <string name="jieshao">介绍 </string>
+    <string name="chedui_name">请输入车队名称</string>
+    <string name="hint_cd_name">请输入车队名称</string>
+    <string name="hint_cd_kouhao">请输入口号</string>
+    <string name="hint_cd_jianjie">请输入简介</string>
+    <string name="hint_cd_gonggao">请输入公告</string>
+    <string name="gonggao">公告</string>
+    <string name="login">登陆</string>
+    <string name="title_activity_fa_biao">FaBiaoActivity</string>
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="login_label_username">手机号</string>
+    <string name="shezhimima">设置密码</string>
+    <string name="querenmima">确认密码</string>
+    <string name="queren">确认</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_register">验证码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="register_label_signin">注册</string>
+    <string name="huoquyanzheng">获取验证码</string>
+    <string name="tijiaoyanzheng">提交验证码</string>
+    <string name="meiyoumima">没有密码？</string>
+    <string name="login_username_hint">11位手机号</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_password_hint">6-16位密码</string>
+    <string name="login_register_hint">正确格式的mail</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_register1">Register1</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="app_name">骑行天下</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tj_luxian">TjLuxianActivity</string>
+    <!-- 我的模块用到的String    开始 -->
+    <string name="tixing">消息提醒</string>
+    <string name="character">字体大小</string>
+    <string name="liuliang">省流量模式</string>
+    <string name="about">关于</string>
+    <string name="collect">我的收藏</string>
+    <string name="clear">清除缓存</string>
+    <string name="care">我的关注</string>
+    <string name="tongzhi">消息通知</string>
+    <string name="jilu">骑行记录</string>
+    <string name="creat">创建车队</string>
+    <string name="more">关于</string>
+    <string name="out">退出</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_cut_face">CutFaceActivity</string>
+    <string name="title_activity_attation">AttationActivity</string>
+    <string name="title_activity_inform">InformActivity</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="title_activity_create">CreateActivity</string>
+    <string name="title_activity_login_activity1">LoginActivity1</string>
+    <string name="collecttext">我的收藏</string>
+    <string name="title_activity_collection">CollectionActivity</string>
+    <string name="title_activity_publish">PublishActivity</string>
+    <string name="title_activity_square_detail">SquareDetailActivity</string>
+    <string name="title_activity_edit_data">EditDataActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_base1">Base1Activity</string>
+
+    <!-- 我的模块用到的String    结束 -->
+    <string name="topbar_back_text">返回</string>
+    <string name="login_please">点击登录</string>
+    <string name="username">用户名</string>
+    <string name="title_activity_my__more">My_MoreActivity</string>
+    <string name="title_activity_my_care">My_careActivity</string>
+    <string name="title_activity_my__collection">My_CollectionActivity</string>
+    <string name="title_activity_my__inform">My_InformActivity</string>
+    <string name="title_activity_my__record">My_RecordActivity</string>
+    <string name="title_activity_my__create">MY_CreateActivity</string>
+    <string name="title_activity_my_detail_">My_detail_Activity</string>
+    <string name="my">我的</string>
+    <string name="title_activity_my__edit_detail_">My_Edit_detail_Activity</string>
+    <string name="nameEdit_hint">请输入昵称</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="choose_age">请选择年龄</string>
+    <string name="address">地址</string>
+    <string name="choose_address">请选择地址</string>
+    <string name="choose_sex">请选择性别</string>
+    <string name="total_dis">总里程</string>
+    <string name="total_time">总时间</string>
+    <string name="hao">账号</string>
+    <string name="image">头像</string>
+    <string name="title_activity_post_bean">PostBeanActivity</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="title_activity_userinfo">UserinfoActivity</string>
+    <string name="title_activity_tj_zbjt">TjZbjtActivity</string>
+    <string name="title_activity_jt_zb">JtZbActivity</string>
+    <string name="title_activity_jt_team">JtTeamActivity</string>
+
+    <!-- 首页  开始 -->
+    <string name="sy_csts">想去哪里？告诉我</string>
+    <string name="sy_lxtop">路线TOP榜</string>
+    <string name="sy_zncd">最牛车队</string>
+    <string name="sy_mrfj">迷人风景</string>
+    <string name="sy_xssl">新手上路</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="dy">队员</string>
+
+    <string-array name="diqu">
+        <item>苏州</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>平顶山</item>
+    </string-array>
+    <!-- 首页  结束 -->
+
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_seek_help">SeekHelpActivity</string>
+    <string name="title_activity_ji_lu">JiLuActivity</string>
+    <string name="title_activity_first">FirstActivity</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <TextView 
+      android:id="@+id/jilu_cishu"
+        style="@style/mw"
+        android:textSize="25sp"
+       android:gravity="center"/>
+       <LinearLayout
+                style="@style/ww"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/licheng" />
+
+                <TextView
+                    android:id="@+id/jilu_luche"
+                    style="@style/ww"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#696969" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/jilu_alltime"
+                    style="@style/ww"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#696969" />
+            </LinearLayout>
+            
+       
+      <TextView 
+        android:id="@+id/jilu_begin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup 
+        android:id="@+id/group_tj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#87CEFA"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/tj_luxian"
+             style="@style/dingbuTextStyle"
+            android:checked="true"
+            android:text="路线"
+            />
+         <RadioButton 
+            android:id="@+id/tj_zhuanbei"
+            style="@style/dingbuTextStyle"
+            android:text="装备"
+            />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tuijianviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

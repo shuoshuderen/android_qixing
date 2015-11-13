@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/post_pl_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/weidenglu" />
+
+    <LinearLayout
+        style="@style/ww"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textpost_pl_username"
+            android:textColor="#99330033"
+            android:layout_marginLeft="10dp"
+            style="@style/mw" />
+
+        <TextView
+            android:id="@+id/item_textview"
+             android:layout_marginLeft="10dp"
+            style="@style/mw" />
+
+        <TextView
+            android:id="@+id/textpost_pl_neirong"
+             android:layout_marginLeft="10dp"
+            style="@style/mw" />
+    </LinearLayout>
+
+</LinearLayout>

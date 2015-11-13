@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qixingtianxia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+
+    <application
+        android:name="com.qixing.my.utils.Myappliction"
+        android:allowBackup="true"
+        android:icon="@drawable/apptubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="LcVM7yAGC6ZTz1hHro1gVxhk" />
+
+        <activity
+            android:name="com.example.qixingtianxia.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qixing.tuijian.LuXianActivity"
+            android:label="@string/title_activity_tj_luxian" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_MoreActivity"
+            android:label="@string/title_activity_my__more" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_careActivity"
+            android:label="@string/title_activity_my_care" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_CollectionActivity"
+            android:label="@string/title_activity_my__collection" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_InformActivity"
+            android:label="@string/title_activity_my__inform" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_RecordActivity"
+            android:label="@string/title_activity_my__record" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.MY_CreateActivity"
+            android:label="@string/title_activity_my__create" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_detail_Activity"
+            android:label="@string/title_activity_my_detail_" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_Edit_detail_Activity"
+            android:label="@string/title_activity_my__edit_detail_" >
+        </activity>
+        <activity
+            android:name="com.example.qixingtianxia.CutFaceActivity"
+            android:label="@string/title_activity_cut_face" >
+        </activity>
+        <activity
+            android:name="com.qixing.guangchang.PostBeanActivity"
+            android:label="@string/title_activity_post_bean" >
+        </activity>
+        <activity
+            android:name="com.qixing.guangchang.GcAddActivity"
+            android:label="@string/title_activity_userinfo" >
+        </activity>
+        <activity
+            android:name="com.qixing.denglu.LoginActivity"
+            android:label="@string/login" >
+        </activity>
+        <activity
+            android:name="com.qixing.denglu.Register"
+            android:label="@string/register_label_signin" >
+        </activity>
+        <activity
+            android:name="com.qixing.denglu.Register1"
+            android:label="@string/shezhimima" >
+        </activity>
+        <activity
+            android:name="com.qixing.tuijian.TjZbjtActivity"
+            android:label="@string/title_activity_tj_zbjt" >
+        </activity>
+        <activity
+            android:name="com.qixing.tuijian.JtZbActivity"
+            android:label="@string/title_activity_jt_zb" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.My_CheDuiActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.qixing.fujin.JtTeamActivity"
+            android:label="@string/title_activity_jt_team" >
+        </activity>
+        <activity
+            android:name="com.qixing.shouye.LuxianTopActivity"
+            android:label="@string/sy_lxtop" />
+        <activity
+            android:name="com.qixing.shouye.MirenfengjingActivity"
+            android:label="@string/sy_mrfj" />
+        <activity
+            android:name="com.qixing.shouye.ZuiniucheduiActivity"
+            android:label="@string/sy_zncd" />
+        <activity
+            android:name="com.qixing.shouye.XinshoushangluActivity"
+            android:label="@string/sy_xssl" />
+        <activity
+            android:name="com.example.qixingtianxia.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="com.qixing.fujin.Team_PeopleActivity"
+            android:label="@string/dy" >
+        </activity>
+        <activity
+            android:name="com.qixing.shouye.JtXinshouslActivity"
+            android:label="@string/dy" >
+        </activity>
+        <activity
+            android:name="com.qixing.shouye.SousuoLxActivity"
+            android:label="@string/dy" >
+        </activity>
+        <activity
+            android:name="com.qixing.shouye.ImagePagerActivity"
+            android:label="@string/dy" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="com.qixing.fujin.HelpActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="com.qixing.fujin.SeekHelpActivity"
+            android:label="@string/title_activity_seek_help" >
+        </activity>
+        <activity
+            android:name="com.qixing.wode.JiLuActivity"
+            android:label="@string/title_activity_ji_lu" >
+        </activity>
+        <activity
+            android:name="com.example.qixingtianxia.FirstActivity"
+            android:label="@string/app_name" >
+             <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

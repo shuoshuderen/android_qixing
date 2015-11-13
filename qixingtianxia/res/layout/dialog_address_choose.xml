@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_camera_normal"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/address_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="请选择地理位置:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="@color/sub_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_camera_normal"
+        android:orientation="horizontal" >
+
+        <com.qixing.my.views.WheelView
+            android:id="@+id/province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.qixing.my.views.WheelView>
+
+        <com.qixing.my.views.WheelView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.qixing.my.views.WheelView
+            android:id="@+id/town"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="@color/sub_color" />
+
+    <Button
+        android:id="@+id/address_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成" />
+
+</LinearLayout>

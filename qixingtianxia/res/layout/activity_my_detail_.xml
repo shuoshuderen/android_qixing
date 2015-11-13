@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:orientation="vertical"
+    tools:context="com.qixing.wode.My_detail_Activity" >
+<include 
+    layout="@layout/topbar"/>
+    <com.qixing.my.views.ReboundScrollView
+       
+        style="@style/mm"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llimage"
+                style="@style/ll4"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:gravity="center"
+                    android:text="@string/image" />
+
+                <com.qixing.my.views.CircleImageView
+                    android:id="@+id/user_default_image"
+                    style="@style/userimage"
+                    android:src="@drawable/g03" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llname"
+                style="@style/ll1" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/nickname" />
+
+                <TextView
+                    android:id="@+id/tv_username_detail"
+                    style="@style/qitatext"
+                    android:text="未命名" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/llphone"
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/hao" />
+
+                <TextView
+                     android:id="@+id/tv_userid_detail"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llsex"
+                style="@style/ll2" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/tv_gean_detail"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/llage"
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/tv_age_detail"
+                    style="@style/qitatext"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lladdress"
+                style="@style/ll2" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/tv_address_detail"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/lldistance"
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/total_dis" />
+
+                <TextView
+                     android:id="@+id/tv_licheng_detail"
+                    style="@style/qitatext"
+                    android:text="0" />
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/lltime"
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/total_time" />
+
+                <TextView
+                     android:id="@+id/tv_time_detail"
+                    style="@style/qitatext"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.qixing.my.views.ReboundScrollView>
+
+</LinearLayout>

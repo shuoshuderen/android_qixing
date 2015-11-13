@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" /> 
+    <TextView 
+        android:id="@+id/center_text_tjlx"
+        android:layout_margin="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="25sp"
+       android:text="@string/kongzhi"/>
+   <com.qixing.refresh_utils.PullToRefreshLayout 
+    android:id="@+id/luxian_fresh"
+    style="@style/mm">
+    <com.qixing.refresh_utils.PullableListView 
+        android:id="@+id/listview_tj_lx"
+        style="@style/mm"
+        android:divider="#AAA"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none">
+        
+    </com.qixing.refresh_utils.PullableListView>
+</com.qixing.refresh_utils.PullToRefreshLayout>
+   
+
+    
+</LinearLayout>

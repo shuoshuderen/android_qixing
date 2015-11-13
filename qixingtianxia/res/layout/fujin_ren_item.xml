@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <!-- 附近的人中的List中的item -->
+
+    <LinearLayout
+        style="@style/mw"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/care_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/ww"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/setsex"
+                style="@style/ww"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/care_name"
+                    style="@style/ww"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/care_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/care_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/care_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffa54f" />
+                <!-- android:background="#3fa9f5" -->
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ww"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/licheng" />
+
+                <TextView
+                    android:id="@+id/care_dis"
+                    style="@style/ww"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#696969" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/care_time"
+                    style="@style/ww"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#696969" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

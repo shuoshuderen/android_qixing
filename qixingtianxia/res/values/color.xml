@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 我的界面添加的颜色属性 -->
+    <color name="sub_color">#87CEFA</color>
+    <color name="topbar_bg">#87CEFA</color>
+    <color name="my_bg">#EDEDED</color> 
+     <color name="dialog_bg">#077773</color> 
+      <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#AAAA</color> 
+    
+</resources>

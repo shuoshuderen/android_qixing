@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:orientation="vertical"
+    tools:context="com.qixing.wode.My_Edit_detail_Activity" >
+
+    <include layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:id="@+id/name_rl"
+        style="@style/my_rl"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/name_text"
+            style="@style/edit_text"
+            android:text="@string/nickname" />
+
+        <com.qixing.my.views.MyEditText
+            android:id="@+id/name"
+            style="@style/choose_text"
+            android:layout_toRightOf="@+id/name_text"
+            android:focusable="false"
+            android:hint="@string/nameEdit_hint"
+            android:maxLength="12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_rl"
+        style="@style/my_rl" >
+
+        <TextView
+            android:id="@+id/sex_text"
+            style="@style/edit_text"
+            android:text="@string/sex"
+             />
+
+        <TextView
+            android:id="@+id/sex"
+            style="@style/choose_text"
+            android:layout_toRightOf="@+id/sex_text"
+            android:focusable="false" 
+            android:hint="@string/choose_sex"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/age_rl"
+        style="@style/my_rl" >
+
+        <TextView
+            android:id="@+id/age_text"
+            style="@style/edit_text"
+            android:text="@string/age" />
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/choose_text"
+            android:layout_toRightOf="@+id/age_text"
+            android:focusable="false"
+            android:hint="@string/choose_age" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_rl"
+        style="@style/my_rl" >
+
+        <TextView
+            android:id="@+id/address_text"
+            style="@style/edit_text"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/choose_text"
+            android:layout_toRightOf="@+id/address_text"
+            android:focusable="false"
+            android:hint="@string/choose_address" />
+    </RelativeLayout>
+
+</LinearLayout>

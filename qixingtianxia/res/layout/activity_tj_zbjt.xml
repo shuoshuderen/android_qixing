@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TjZbjtActivity" >
+ <include layout="@layout/topbar" />
+    <com.qixing.refresh_utils.PullToRefreshLayout 
+        android:layout_marginTop="50dp"
+    android:id="@+id/jtzhuangbei_fresh"
+    style="@style/mm">
+    <com.qixing.refresh_utils.PullableListView 
+        android:id="@+id/listview_tj_jtzb"
+        style="@style/mm"
+        android:divider="#AAA"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none">
+        
+    </com.qixing.refresh_utils.PullableListView>
+</com.qixing.refresh_utils.PullToRefreshLayout>
+
+</RelativeLayout>

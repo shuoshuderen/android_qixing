@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+    <include layout="@layout/topbar" />
+
+    <com.qixing.refresh_utils.PullToRefreshLayout
+        android:id="@+id/chedui_fresh"
+        style="@style/mm" >
+
+        <com.qixing.refresh_utils.PullableListView
+            android:id="@+id/wo_chedui_listview"
+            style="@style/mm"
+            android:divider="#AAA"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none" >
+        </com.qixing.refresh_utils.PullableListView>
+    </com.qixing.refresh_utils.PullToRefreshLayout>
+
+</LinearLayout>

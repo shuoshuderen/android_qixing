@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/background_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑行天下"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@layout/background_login_div_bg"
+        android:padding="15dip" >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/login_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_label_username" />
+ 
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_user_input"
+            android:hint="@string/login_username_hint"
+            android:drawableLeft="@drawable/username111"
+            android:inputType="text"
+            android:singleLine="true" />
+        <!-- 密码 text -->
+
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:hint="@string/login_password_hint"
+             android:drawableLeft="@drawable/password111"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+        <!-- 登录button -->
+<CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_edit"
+        android:layout_alignTop="@+id/signin_button"
+        android:text="记住用户名"
+        android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/password_edit"
+            android:layout_below="@id/password_edit"
+            android:background="@layout/background_login_div_bg"
+            android:text="@string/login_label_signin"
+            android:onClick="denglu"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:id="@+id/miniTwitter_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/qixingtianxia" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+        

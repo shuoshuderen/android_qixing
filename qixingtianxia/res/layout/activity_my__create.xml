@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qixing.wode.MY_CreateActivity" >
+
+    <include layout="@layout/topbar" />
+    <!-- 头像，名字 -->
+
+    <LinearLayout
+        style="@style/mw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tjtouxiang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/cycling_team_logo" />
+        <!-- 姓名,车队ID -->
+
+        <EditText
+            android:id="@+id/cd_name"
+            style="@style/ww"
+            android:hint="@string/hint_cd_name"
+            android:textSize="20sp"
+            android:background="@null" />
+        <requestFocus />
+    </LinearLayout>
+    <!-- 点击添加口号 -->
+
+    <LinearLayout
+        style="@style/mw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tadd_kouhao"
+            style="@style/ww"
+            android:layout_margin="15dp"
+            android:text="@string/kouhao"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/kouhao_shuru"
+            style="@style/mm"
+            android:background="@null"
+            android:hint="@string/hint_cd_kouhao"
+            android:singleLine="true" >
+            
+        </EditText>
+    </LinearLayout>
+    <!-- 点击增加介绍 -->
+
+    <LinearLayout
+        style="@style/mw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tadd_jieshao"
+            style="@style/ww"
+            android:layout_margin="15dp"
+            android:text="@string/jieshao"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/jieshaoshuru"
+            style="@style/mm"
+            android:background="@null"
+            android:hint="@string/hint_cd_jianjie"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 车队公告 -->
+
+    <RelativeLayout
+        style="@style/mw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/gonggaot"
+            style="@style/ww"
+            android:layout_margin="15dp"
+            android:text="@string/gonggao"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/gonggaoshuru"
+            style="@style/ww"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/gonggaot"
+            android:background="@null"
+            android:hint="@string/hint_cd_gonggao"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

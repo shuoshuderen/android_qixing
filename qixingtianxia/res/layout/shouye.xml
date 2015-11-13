@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#74c4de"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/diqu"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:entries="@array/diqu" />
+
+    <ImageView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/diqu"
+        android:src="@drawable/tmall_icon_arrow_down" />
+
+    <AutoCompleteTextView
+        android:id="@+id/zhuyesousuo"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/b"
+        android:background="@drawable/a1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/sy_csts"/>
+
+    <ImageButton
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/zhuyesousuo"
+        android:background="#74c4de"
+        android:src="@drawable/zhuye_search" />
+<!-- <RelativeLayout 
+     android:id="@+id/flipper1"
+    android:layout_height="250dp"
+    android:layout_width="match_parent"
+    > -->
+    <com.qixing.shouye.MyFillper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_height="200dp"
+        android:autoStart="true"
+        android:flipInterval="3000" 
+        android:outAnimation="@anim/lift_out"
+        android:inAnimation="@anim/right_in">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/i3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <AnalogClock
+            android:id="@+id/analogClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.qixing.shouye.MyFillper>
+  <!--   <RelativeLayout 
+      android:layout_height="20dp"
+    android:layout_width="match_parent" 
+    android:layout_alignParentBottom="true"
+    android:background="#a000" >
+      
+    </RelativeLayout>
+       </RelativeLayout> -->
+    <!-- 中间的viewPager -->
+
+    <LinearLayout
+        android:id="@+id/zhuyezhongjian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flipper"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sylxtop"
+            style="@style/syanniu"
+            android:background="#74c4de"
+            android:drawableBottom="@drawable/hua1"
+            android:text="@string/sy_lxtop" />
+
+        <Button
+            android:id="@+id/syzn"
+            style="@style/syanniu"
+            android:background="#74c4de"
+            android:drawableBottom="@drawable/hua1"
+            android:text="@string/sy_zncd" />
+
+        <Button
+            android:id="@+id/symrfj"
+            style="@style/syanniu"
+            android:background="#74c4de"
+            android:drawableBottom="@drawable/hua1"
+            android:text="@string/sy_mrfj" />
+
+        <Button
+            android:id="@+id/syfresh"
+            style="@style/syanniu"
+            android:background="#74c4de"
+            android:drawableBottom="@drawable/hua1"
+            android:text="@string/sy_xssl" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

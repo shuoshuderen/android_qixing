@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity" >
+<include 
+    layout="@layout/topbar"/>
+    <com.qixing.my.views.ReboundScrollView
+        style="@style/mm"
+        android:layout_marginTop="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/ll4"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:gravity="center"
+                    android:text="@string/image" />
+
+                <com.qixing.my.views.CircleImageView
+                    android:id="@+id/userinfo_image"
+                    style="@style/userimage"
+                    android:src="@drawable/g03" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll1" >
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/nickname" />
+
+                <TextView
+                    android:id="@+id/userinfo_name"
+                    style="@style/qitatext"
+                    android:text="未命名" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                style="@style/ll3" >
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/hao" />
+
+                <TextView
+                     android:id="@+id/userinfo_phone"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll2" >
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/userinfo_xingbie"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+       
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/userinfo_age"
+                    style="@style/qitatext"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+            
+                style="@style/ll2" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/userinfo_address"
+                    style="@style/qitatext"
+                    />
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+               
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/total_dis" />
+
+                <TextView
+                     android:id="@+id/userinfo_licheng"
+                    style="@style/qitatext"
+                    android:text="0" />
+            </LinearLayout>
+             <LinearLayout
+
+                style="@style/ll3" >
+
+                <TextView
+                    style="@style/persontext"
+                    android:text="@string/total_time" />
+
+                <TextView
+                     android:id="@+id/userinfo_time"
+                    style="@style/qitatext"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.qixing.my.views.ReboundScrollView>
+
+</RelativeLayout>

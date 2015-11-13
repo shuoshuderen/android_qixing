@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".JiLuActivity" >
+  <include layout="@layout/topbar" /> 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用时： "
+            android:textSize="30sp"/>
+        <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format="%s "
+        android:textSize="30sp" />
+        
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="里程  : "
+            android:textSize="30sp"/>
+         <TextView 
+             android:id="@+id/text_licheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:0"
+            android:textSize="30sp"/>
+         <TextView 
+             android:id="@+id/text_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="米"/>
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"/>
+         <Button 
+            android:id="@+id/button_end"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束"/>
+         </LinearLayout>
+    
+</LinearLayout>

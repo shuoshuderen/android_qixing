@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    tools:context="com.example.qixingtianxia.CutFaceActivity" >
+
+
+    <com.qixing.my.utils.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" 
+        
+        >
+    </com.qixing.my.utils.ClipImageLayout>
+
+</RelativeLayout>

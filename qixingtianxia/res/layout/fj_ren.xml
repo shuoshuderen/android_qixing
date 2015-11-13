@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.qixing.refresh_utils.PullToRefreshLayout 
+    android:id="@+id/ren_fresh"
+    style="@style/mm">
+    <com.qixing.refresh_utils.PullableListView 
+        android:id="@+id/listview_fj_ren"
+        style="@style/mm"
+        android:divider="#AAA"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none">
+        
+    </com.qixing.refresh_utils.PullableListView>
+</com.qixing.refresh_utils.PullToRefreshLayout>
+</LinearLayout>

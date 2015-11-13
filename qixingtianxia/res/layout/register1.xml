@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/background_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑行天下"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="242dp"
+        android:layout_margin="15dip"
+        android:background="@layout/background_login_div_bg"
+        android:padding="15dip" >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/shezhipassword_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/shezhimima" />
+        <!-- 密码 text -->
+
+     
+        <!-- 登录button -->
+
+        <EditText
+            android:id="@+id/shezhipassword_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shezhipassword_input"
+            android:layout_below="@+id/shezhipassword_input"
+            android:ems="10"
+            android:layout_marginTop="18dp"
+            android:hint="@string/login_password_hint"
+            android:inputType="text"
+            android:singleLine="true" />
+       <TextView
+            android:id="@+id/querenpassword_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shezhipassword_edit"
+            android:layout_marginTop="18dp"
+            android:text="@string/querenmima" />
+        <EditText
+            android:id="@+id/querenpassword_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/querenpassword_input"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/queren_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/querenpassword_edit"
+            android:background="@layout/background_login_div_bg"
+            android:onClick="jump"
+            android:text="@string/queren" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:id="@+id/miniTwitter_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/qixingtianxia" />
+    </RelativeLayout>
+
+</LinearLayout>
